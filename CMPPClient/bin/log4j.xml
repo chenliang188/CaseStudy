@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+  
+  <!-- ================================================================= -->
+  <!--                     a rolling file appender                       -->
+  <!-- ================================================================= -->
+  
+  <appender name="file.log" class="org.apache.log4j.RollingFileAppender">
+    <param name="File" value="logs/log.txt" />
+    <param name="Append" value="true" />
+	<param name="MaxFileSize" value="8000KB"/>
+    <param name="MaxBackupIndex" value="20"/>
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%d [%t] %p - %m%n" />
+    </layout>
+  </appender>
+  
+  <!-- ================================================================= -->
+  <!--                       a console appender                          -->
+  <!--     debug can be turned off by setting level of root to "off"     -->
+  <!-- ================================================================= -->
+  
+  <appender name="console.log" class="org.apache.log4j.ConsoleAppender">
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%d [%t] %p - %m%n" />
+    </layout>
+  </appender>
+  
+  <!--  use this to turn on debug to a rolling file. 
+  
+  <root>
+    <level value="debug" />
+    <appender-ref ref="file.log" />
+  </root>
+  -->
+  <!--  use this to turn on debug to console. -->
+  <category name="net.sf.hibernate.cache">
+	  <priority value="debug" />
+  	  <appender-ref ref="console.log" />
+  </category>
+
+  <root>
+    <level value="info" />
+    <appender-ref ref="file.log" />
+    <appender-ref ref="console.log" />
+  </root>
+  
+  
+  <!--  use this to turn off debug. -->
+  <!--
+  <root>
+    <level value="off" />
+    <appender-ref ref="bee.console.log" />
+  </root>
+  -->
+  
+</log4j:configuration>

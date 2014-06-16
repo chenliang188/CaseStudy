@@ -1,0 +1,21 @@
+[PropertyInfo]
+BAjouter,javax.swing.JButton,false,false, , ,false,<default>
+BEfface,javax.swing.JButton,false,false, , ,false,<default>
+BEncrypter,javax.swing.JButton,false,false, , ,false,<default>
+borderLayout1,java.awt.BorderLayout,false,false, , ,false,<default>
+borderLayout2,java.awt.BorderLayout,false,false, , ,false,<default>
+BQuitter,javax.swing.JButton,false,false, , ,false,<default>
+flowLayout1,java.awt.FlowLayout,false,false, , ,false,<default>
+gridBagLayout1,java.awt.GridBagLayout,false,false, , ,false,<default>
+LNom,javax.swing.JLabel,false,false, , ,false,<default>
+LPass,javax.swing.JLabel,false,false, , ,false,<default>
+PBas,javax.swing.JPanel,false,false, , ,false,<default>
+PBasDroite,javax.swing.JPanel,false,false, , ,false,<default>
+PCentre,javax.swing.JPanel,false,false, , ,false,<default>
+PMotpasse,javax.swing.JPasswordField,false,false, , ,false,<default>
+TNom,javax.swing.JTextField,false,false, , ,false,<default>
+[IconNames]
+
+
+
+

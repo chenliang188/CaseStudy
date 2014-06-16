@@ -1,0 +1,38 @@
+[PropertyInfo]
+bAfficheCleePublic,JButton,false,false, , ,false,<défaut>
+bAjouter,JButton,false,false, , ,false,<défaut>
+bDecrypter,JButton,false,false, , ,false,<défaut>
+bEncrypter,JButton,false,false, , ,false,<défaut>
+bitEncryption,int,false,false,bitEncryption,bitEncryption,true,<défaut>
+borderLayout1,BorderLayout,false,false, , ,false,<défaut>
+borderLayout2,BorderLayout,false,false, , ,false,<défaut>
+bParDestination,JButton,false,false, , ,false,<défaut>
+bParSource,JButton,false,false, , ,false,<défaut>
+cleeModulos,String,false,false, , ,true,<défaut>
+cleePublic,String,false,false, , ,true,<défaut>
+contacts,Vector,false,false, , ,false,<défaut>
+gridBagLayout1,GridBagLayout,false,false, , ,false,<défaut>
+jScrollPane1,JScrollPane,false,false, , ,false,<défaut>
+lContact,JList,false,false, , ,false,<défaut>
+lFDestination,JLabel,false,false, , ,false,<défaut>
+lFSource,JLabel,false,false, , ,false,<défaut>
+listeUser,Hashtable,false,false, , ,true,<défaut>
+pCentre,JPanel,false,false, , ,false,<défaut>
+pCleePublic,JPanel,false,false, , ,false,<défaut>
+pEncryption,JPanel,false,false, , ,false,<défaut>
+pEstOuest,JPanel,false,false, , ,false,<défaut>
+pOuest,JPanel,false,false, , ,false,<défaut>
+pSud,JPanel,false,false, , ,false,<défaut>
+taCleePublic,JTextArea,false,false, , ,false,<défaut>
+taModulos,JTextArea,false,false, , ,false,<défaut>
+textDestination,String,false,false, , ,true,<défaut>
+textSource,String,false,false, , ,true,<défaut>
+tFDestination,JTextField,false,false, , ,false,<défaut>
+tFSource,JTextField,false,false, , ,false,<défaut>
+xYLayout1,XYLayout,false,false, , ,false,<défaut>
+xYLayout2,XYLayout,false,false, , ,false,<défaut>
+[IconNames]
+
+
+
+

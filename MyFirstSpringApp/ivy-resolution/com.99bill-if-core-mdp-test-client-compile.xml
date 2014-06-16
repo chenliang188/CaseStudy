@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="com.99bill"
+		module="if-core-mdp-test-client"
+		revision="working@ChenLiang-PC"
+		conf="compile"
+		confs="default, compile, zip, test"
+		date="20110917163731"/>
+	<dependencies>
+		<module organisation="org.spring" name="spring-test">
+			<revision name="2.5.6" status="release" pubdate="20110812130101" resolver="bill99_repository.public" artresolver="bill99_repository.public" downloaded="false" searched="false" default="true" conf="default" position="1">
+				<metadata-artifact status="no" details="" size="400" time="0" location="F:\99bill\Local_Repository\repository\ivy-cache\org.spring\spring-test\ivy-2.5.6.xml" searched="false" origin-is-local="false" origin-location="http://192.168.52.211/org.spring/spring-test/ivys/ivy-2.5.6.xml"/>
+				<caller organisation="com.99bill" name="if-core-mdp-test-client" conf="zip, compile" rev="2.5.6" rev-constraint-default="2.5.6" rev-constraint-dynamic="2.5.6" callerrev="working@ChenLiang-PC"/>
+				<artifacts>
+					<artifact name="spring-test" type="jar" ext="jar" status="no" details="" size="180924" time="0" location="F:\99bill\Local_Repository\repository\ivy-cache\org.spring\spring-test\jars\spring-test-2.5.6.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.spring/spring-test/jars/spring-test-2.5.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.spring" name="spring">
+			<revision name="2.5.5" status="release" pubdate="20110812130118" resolver="bill99_repository.public" artresolver="bill99_repository.public" downloaded="false" searched="false" default="true" conf="default" position="0">
+				<metadata-artifact status="no" details="" size="390" time="0" location="F:\99bill\Local_Repository\repository\ivy-cache\org.spring\spring\ivy-2.5.5.xml" searched="false" origin-is-local="false" origin-location="http://192.168.52.211/org.spring/spring/ivys/ivy-2.5.5.xml"/>
+				<caller organisation="com.99bill" name="if-core-mdp-test-client" conf="zip, compile" rev="2.5.5" rev-constraint-default="2.5.5" rev-constraint-dynamic="2.5.5" callerrev="working@ChenLiang-PC"/>
+				<artifacts>
+					<artifact name="spring" type="jar" ext="jar" status="no" details="" size="3335990" time="0" location="F:\99bill\Local_Repository\repository\ivy-cache\org.spring\spring\jars\spring-2.5.5.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.spring/spring/jars/spring-2.5.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

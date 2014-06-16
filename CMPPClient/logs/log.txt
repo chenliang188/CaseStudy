@@ -1,0 +1,15 @@
+2009-08-27 15:31:13,937 [Thread-0] INFO - 心跳线程启动....
+2009-08-27 15:31:14,046 [recieveThread] INFO - 收到connect_resp，status[0]，AuthenticatorISMG[1111111111111111]
+2009-08-27 15:31:24,937 [recieveThread] INFO - 收到Active_Test_Resp,reserved[0]
+2009-08-27 15:31:35,937 [recieveThread] INFO - 收到Active_Test_Resp,reserved[0]
+2009-08-27 15:31:46,937 [recieveThread] INFO - 收到Active_Test_Resp,reserved[0]
+2009-08-27 15:31:57,937 [recieveThread] INFO - 收到Active_Test_Resp,reserved[0]
+2009-08-27 15:32:08,937 [recieveThread] INFO - 收到Active_Test_Resp,reserved[0]
+2009-08-27 15:32:19,937 [recieveThread] INFO - 收到Active_Test_Resp,reserved[0]
+2009-08-27 15:32:30,937 [recieveThread] INFO - 收到Active_Test_Resp,reserved[0]
+2009-08-27 15:36:42,859 [Thread-0] INFO - 心跳线程启动....
+2009-08-27 15:36:42,875 [recieveThread] INFO - 收到connect_resp，status[0]，AuthenticatorISMG[1111111111111111]
+2009-08-27 15:36:44,859 [recieveThread] INFO - 收到Active_Test_Resp,reserved[0]
+2009-08-27 15:36:46,859 [recieveThread] INFO - 收到Active_Test_Resp,reserved[0]
+2009-08-27 15:36:48,859 [recieveThread] INFO - 收到Active_Test_Resp,reserved[0]
+2009-08-27 15:36:50,859 [recieveThread] INFO - 收到Active_Test_Resp,reserved[0]

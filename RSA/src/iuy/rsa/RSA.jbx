@@ -1,0 +1,15 @@
+[PropertyInfo]
+modulus,BigInteger,false,false, , ,true,<défaut>
+modulusE,BigInteger,false,false, , ,false,<défaut>
+N,int,false,false, , ,false,<défaut>
+p1,BigInteger,false,false, , ,false,<défaut>
+p2,BigInteger,false,false, , ,false,<défaut>
+phi0,BigInteger,false,false, , ,false,<défaut>
+privateKey,BigInteger,false,false, , ,false,<défaut>
+publicKey,BigInteger,false,false, , ,true,<défaut>
+publicKeyE,BigInteger,false,false, , ,false,<défaut>
+[IconNames]
+
+
+
+

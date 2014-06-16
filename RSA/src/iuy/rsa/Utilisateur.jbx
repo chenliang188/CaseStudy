@@ -1,0 +1,9 @@
+[PropertyInfo]
+nom,String,false,false,nom,nom de l'utilisateur,true,<défaut>
+cleRSA,rsa.RSA,false,false,cleRSA,cleRSA,true,<défaut>
+contact,java.util.Hashtable,false,false,Contact,Contact,true,<défaut>
+[IconNames]
+
+
+
+

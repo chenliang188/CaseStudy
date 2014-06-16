@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="GB2312"?>
+
+<!DOCTYPE encoders [
+    <!ELEMENT encoders (ClassInfo+)>
+    
+    <!ELEMENT ClassInfo (boolean|byte|short|int|long|String|Date|Data|class|ShortInteger|EncodedString|List|Map)+>
+    <!ATTLIST ClassInfo 
+        name CDATA #REQUIRED
+        id   CDATA #REQUIRED
+        desc CDATA #IMPLIED
+    >
+    
+    <!ELEMENT boolean EMPTY>
+    <!ATTLIST boolean
+        name        CDATA #IMPLIED
+        tag         CDATA #IMPLIED
+        getMethod   CDATA #IMPLIED
+        setMethod   CDATA #IMPLIED
+    >
+    
+    <!ELEMENT byte EMPTY>
+    <!ATTLIST byte
+        name        CDATA #IMPLIED
+        tag         CDATA #IMPLIED
+        getMethod   CDATA #IMPLIED
+        setMethod   CDATA #IMPLIED
+    >
+    
+    <!ELEMENT short EMPTY>
+    <!ATTLIST short
+        name        CDATA #IMPLIED
+        tag         CDATA #IMPLIED
+        getMethod   CDATA #IMPLIED
+        setMethod   CDATA #IMPLIED
+    >
+    
+    <!ELEMENT int EMPTY>
+    <!ATTLIST int
+        name        CDATA #IMPLIED
+        tag         CDATA #IMPLIED
+        getMethod   CDATA #IMPLIED
+        setMethod   CDATA #IMPLIED
+    >
+    
+    <!ELEMENT long EMPTY>
+    <!ATTLIST long
+        name        CDATA #IMPLIED
+        tag         CDATA #IMPLIED
+        getMethod   CDATA #IMPLIED
+        setMethod   CDATA #IMPLIED
+    >
+    
+    <!ELEMENT String EMPTY>
+    <!ATTLIST String
+        name        CDATA #IMPLIED
+        tag         CDATA #IMPLIED
+        getMethod   CDATA #IMPLIED
+        setMethod   CDATA #IMPLIED
+        encoding    CDATA #IMPLIED
+    >
+    
+    <!ELEMENT Date EMPTY>
+    <!ATTLIST Date
+        name        CDATA #IMPLIED
+        tag         CDATA #IMPLIED
+        getMethod   CDATA #IMPLIED
+        setMethod   CDATA #IMPLIED
+    >
+    
+    <!ELEMENT Data EMPTY>
+    <!ATTLIST Data
+        name        CDATA #IMPLIED
+        tag         CDATA #IMPLIED
+        getMethod   CDATA #IMPLIED
+        setMethod   CDATA #IMPLIED
+    >
+    
+    <!ELEMENT class EMPTY>
+    <!ATTLIST class
+        name        CDATA #IMPLIED
+        tag         CDATA #IMPLIED
+        getMethod   CDATA #IMPLIED
+        setMethod   CDATA #IMPLIED
+        className   CDATA #REQUIRED
+        writeClassID (true|false) "true" 
+    >
+    
+    <!ELEMENT ShortInteger EMPTY>
+    <!ATTLIST ShortInteger
+        name        CDATA #IMPLIED
+        tag         CDATA #IMPLIED
+        getMethod   CDATA #IMPLIED
+        setMethod   CDATA #IMPLIED
+    >
+    
+    
+    <!-- List 属性说明：
+        name        字段的名字, 用于通过反射获取对应的get、set方法。如果没有配置名字，说明该List是内部的无名List元素。
+        tag         编码时使用的Tag值，采用十六进制格式表示。
+        getMethod   访问对象的get方法名，缺省值为 getXXX，其中XXX为对象的名字。
+        addMethod   为List增加单个元素的方法名。缺省值 addXXX，其中XXX为去掉 List后缀的字段名。
+        className   创建List对象的类名。如果不指定，缺省为  java.util.ArrayList 。
+    -->
+    <!ELEMENT List (boolean|byte|short|int|long|String|Date|Data|class|ShortInteger|EncodedString|List|Map)>
+    <!ATTLIST List
+        name        CDATA #IMPLIED
+        tag         CDATA #IMPLIED
+        getMethod   CDATA #IMPLIED
+        addMethod   CDATA #IMPLIED
+        className   CDATA #IMPLIED
+        encapsulate (true|false) "false"
+    >
+    
+    <!-- Map 属性说明：
+        name        字段的名字, 用于通过反射获取对应的get、set方法。如果没有配置名字，说明该Map是内部的无名Map元素。
+        tag         编码时使用的Tag值，采用十六进制格式表示。
+        getMethod   访问对象的get方法名。缺省值为 getXXX，其中XXX为对象的名字。
+        addMethod   为Map增加单个元素的方法名。缺省值 addXXX，其中XXX为去掉 Map后缀的字段名。
+        className   创建Map对象的类名。如果不指定，缺省为  java.util.HashMap 。
+    -->
+    <!ELEMENT Map ((boolean|byte|short|int|long|String|Date|Data|class|ShortInteger|EncodedString|List|Map), 
+                   (boolean|byte|short|int|long|String|Date|Data|class|ShortInteger|EncodedString|List|Map))>
+    <!ATTLIST Map
+        name        CDATA #IMPLIED
+        tag         CDATA #IMPLIED
+        getMethod   CDATA #IMPLIED
+        addMethod   CDATA #IMPLIED
+        className   CDATA #IMPLIED
+        encapsulate (true|false) "false"
+    >
+]>
+
+<encoders>
+    <ClassInfo name="com.huawei.dpf.portal.app.remote.message.entity.conn.DP3LoginReq" id="01">
+        <byte name="MessageType" tag="82"/>
+        <short name="MessageSerial" tag="83"/>
+        <String name="SessionID" tag="84"/>
+    </ClassInfo>
+    
+    <ClassInfo name="com.huawei.dpf.portal.app.remote.message.entity.conn.DP3LoginRes" id="02">
+        <byte name="MessageType" tag="82"/>
+        <short name="MessageSerial" tag="83"/>
+        <String name="SessionID" tag="84"/>
+        <short name="ResponseStatus" tag="86"/>
+        <EncodedString name="ResponseText" tag="87"/>
+    </ClassInfo>
+
+    <ClassInfo name="com.huawei.dpf.portal.app.remote.message.entity.conn.DP3HeartBeatReq" id="03">
+        <byte name="MessageType" tag="82"/>
+        <short name="MessageSerial" tag="83"/>
+        <String name="SessionID" tag="84"/>
+    </ClassInfo>
+    
+    <ClassInfo name="com.huawei.dpf.portal.app.remote.message.entity.conn.DP3HeartBeatRes" id="04">
+        <byte name="MessageType" tag="82"/>
+        <short name="MessageSerial" tag="83"/>
+        <String name="SessionID" tag="84"/>
+        <short name="ResponseStatus" tag="86"/>
+        <EncodedString name="ResponseText" tag="87"/>
+    </ClassInfo>
+
+    <ClassInfo name="com.huawei.dpf.portal.app.remote.message.entity.conn.DP3LogoutReq" id="05">
+        <byte name="MessageType" tag="82"/>
+        <short name="MessageSerial" tag="83"/>
+        <String name="SessionID" tag="84"/>
+        <short name="Reason" tag="85"/>
+    </ClassInfo>
+    
+    <ClassInfo name="com.huawei.dpf.portal.app.remote.message.entity.conn.DP3LogoutRes" id="06">
+        <byte name="MessageType" tag="82"/>
+        <short name="MessageSerial" tag="83"/>
+        <String name="SessionID" tag="84"/>
+        <short name="ResponseStatus" tag="86"/>
+        <EncodedString name="ResponseText" tag="87"/>
+    </ClassInfo>
+
+
+    <ClassInfo name="com.huawei.dpf.portal.app.remote.message.entity.album.DP3AddAlbumReq" id="11">
+        <byte name="MessageType" tag="82"/>
+        <short name="MessageSerial" tag="83"/>
+        <String name="SessionID" tag="84"/>
+        <EncodedString name="AlbumName" tag="92"/>
+        <EncodedString name="AlbumDesc" tag="93"/>
+    </ClassInfo>
+    
+    <ClassInfo name="com.huawei.dpf.portal.app.remote.message.entity.album.DP3AddAlbumRes" id="12">
+        <byte name="MessageType" tag="82"/>
+        <short name="MessageSerial" tag="83"/>
+        <String name="SessionID" tag="84"/>
+        <short name="ResponseStatus" tag="86"/>
+        <EncodedString name="ResponseText" tag="87"/>
+    </ClassInfo>
+
+    <ClassInfo name="com.huawei.dpf.portal.app.remote.message.entity.album.DP3DeleteAlbumReq" id="13">
+        <byte name="MessageType" tag="82"/>
+        <short name="MessageSerial" tag="83"/>
+        <String name="SessionID" tag="84"/>
+        <EncodedString name="AlbumName" tag="92"/>
+    </ClassInfo>
+    
+    <ClassInfo name="com.huawei.dpf.portal.app.remote.message.entity.album.DP3DeleteAlbumRes" id="14">
+        <byte name="MessageType" tag="82"/>
+        <short name="MessageSerial" tag="83"/>
+        <String name="SessionID" tag="84"/>
+        <short name="ResponseStatus" tag="86"/>
+        <EncodedString name="ResponseText" tag="87"/>
+    </ClassInfo>
+
+    <ClassInfo name="com.huawei.dpf.portal.app.remote.message.entity.album.DP3ModifyAlbumReq" id="15">
+        <byte name="MessageType" tag="82"/>
+        <short name="MessageSerial" tag="83"/>
+        <String name="SessionID" tag="84"/>
+        <EncodedString name="SrcAlbumName" tag="95"/>
+        <class name="AlbumInfo" tag="91" className="com.huawei.dpf.portal.app.remote.message.entity.album.DP3AlbumInfo" writeClassID="false"/>
+    </ClassInfo>
+    
+    <ClassInfo name="com.huawei.dpf.portal.app.remote.message.entity.album.DP3ModifyAlbumRes" id="16">
+        <byte name="MessageType" tag="82"/>
+        <short name="MessageSerial" tag="83"/>
+        <String name="SessionID" tag="84"/>
+        <short name="ResponseStatus" tag="86"/>
+        <EncodedString name="ResponseText" tag="87"/>
+    </ClassInfo>
+
+    <ClassInfo name="com.huawei.dpf.portal.app.remote.message.entity.album.DP3QueryAlbumReq" id="17">
+        <byte name="MessageType" tag="82"/>
+        <short name="MessageSerial" tag="83"/>
+        <String name="SessionID" tag="84"/>
+        <EncodedString name="AlbumName" tag="92"/>
+    </ClassInfo>
+    
+    <ClassInfo name="com.huawei.dpf.portal.app.remote.message.entity.album.DP3QueryAlbumRes" id="18">
+        <byte name="MessageType" tag="82"/>
+        <short name="MessageSerial" tag="83"/>
+        <String name="SessionID" tag="84"/>
+        <short name="ResponseStatus" tag="86"/>
+        <EncodedString name="ResponseText" tag="87"/>
+        <List name="AlbumInfoList">
+            <class name="AlbumInfo" tag="91" className="com.huawei.dpf.portal.app.remote.message.entity.album.DP3AlbumInfo"  writeClassID="false"/>
+        </List>
+    </ClassInfo>
+
+
+  <ClassInfo name="com.huawei.dpf.portal.app.remote.message.entity.picture.DP3DeletePictureReq" id="23">
+        <byte name="MessageType" tag="82"/>
+        <short name="MessageSerial" tag="83"/>
+        <String name="SessionID" tag="84"/>
+        <EncodedString name="AlbumName" tag="92"/>
+        <List name="PictureIdList">
+            <String tag="A2"/>
+        </List>
+    </ClassInfo>
+    
+    <ClassInfo name="com.huawei.dpf.portal.app.remote.message.entity.picture.DP3DeletePictureRes" id="24">
+        <byte name="MessageType" tag="82"/>
+        <short name="MessageSerial" tag="83"/>
+        <String name="SessionID" tag="84"/>
+        <short name="ResponseStatus" tag="86"/>
+        <EncodedString name="ResponseText" tag="87"/>
+    </ClassInfo>
+
+
+    <ClassInfo name="com.huawei.dpf.portal.app.remote.message.entity.picture.DP3ModifyPictureReq" id="25">
+        <byte name="MessageType" tag="82"/>
+        <short name="MessageSerial" tag="83"/>
+        <String name="SessionID" tag="84"/>
+        <EncodedString name="AlbumName" tag="92"/>
+        <class name="PictureInfo" tag="A1" className="com.huawei.dpf.portal.app.remote.message.entity.picture.DP3PictureInfo" writeClassID="false"/>
+    </ClassInfo>
+    
+    <ClassInfo name="com.huawei.dpf.portal.app.remote.message.entity.picture.DP3ModifyPictureRes" id="26">
+        <byte name="MessageType" tag="82"/>
+        <short name="MessageSerial" tag="83"/>
+        <String name="SessionID" tag="84"/>
+        <short name="ResponseStatus" tag="86"/>
+        <EncodedString name="ResponseText" tag="87"/>
+    </ClassInfo>
+
+    <ClassInfo name="com.huawei.dpf.portal.app.remote.message.entity.picture.DP3QueryPictureReq" id="27">
+        <byte name="MessageType" tag="82"/>
+        <short name="MessageSerial" tag="83"/>
+        <String name="SessionID" tag="84"/>
+        <EncodedString name="AlbumName" tag="92"/>
+    </ClassInfo>
+    
+    <ClassInfo name="com.huawei.dpf.portal.app.remote.message.entity.picture.DP3QueryPictureRes" id="28">
+        <byte name="MessageType" tag="82"/>
+        <short name="MessageSerial" tag="83"/>
+        <String name="SessionID" tag="84"/>
+        <short name="ResponseStatus" tag="86"/>
+        <EncodedString name="ResponseText" tag="87"/>
+        <List name="PictureInfoList">
+            <class name="PictureInfo" tag="A1" className="com.huawei.dpf.portal.app.remote.message.entity.picture.DP3PictureInfo"  writeClassID="false"/>
+        </List>
+    </ClassInfo>
+
+
+    <ClassInfo name="com.huawei.dpf.portal.app.remote.message.entity.picture.DP3MovePictureReq" id="29">
+        <byte name="MessageType" tag="82"/>
+        <short name="MessageSerial" tag="83"/>
+        <String name="SessionID" tag="84"/>
+        <EncodedString name="SrcAlbumName" tag="95"/>
+        <EncodedString name="DestAlbumName" tag="96"/>
+        <List name="PictureIdList">
+            <String tag="A2"/>
+        </List>
+    </ClassInfo>
+    
+    <ClassInfo name="com.huawei.dpf.portal.app.remote.message.entity.picture.DP3MovePictureRes" id="2A">
+        <byte name="MessageType" tag="82"/>
+        <short name="MessageSerial" tag="83"/>
+        <String name="SessionID" tag="84"/>
+        <short name="ResponseStatus" tag="86"/>
+        <EncodedString name="ResponseText" tag="87"/>
+    </ClassInfo>
+
+    <ClassInfo name="com.huawei.dpf.portal.app.remote.message.entity.picture.DP3SyncBrowsePictureReq" id="2B">
+        <byte name="MessageType" tag="82"/>
+        <short name="MessageSerial" tag="83"/>
+        <String name="SessionID" tag="84"/>
+        <EncodedString name="AlbumName" tag="92"/>
+        <String name="PictureId" tag="A2"/>
+    </ClassInfo>
+    
+    <ClassInfo name="com.huawei.dpf.portal.app.remote.message.entity.picture.DP3SyncBrowsePictureRes" id="2C">
+        <byte name="MessageType" tag="82"/>
+        <short name="MessageSerial" tag="83"/>
+        <String name="SessionID" tag="84"/>
+        <short name="ResponseStatus" tag="86"/>
+        <EncodedString name="ResponseText" tag="87"/>
+    </ClassInfo>
+
+
+    <ClassInfo name="com.huawei.dpf.portal.app.remote.message.entity.album.DP3AlbumInfo" id="90001">
+        <EncodedString name="AlbumName" tag="92"/>
+        <EncodedString name="AlbumDesc" tag="93"/>
+        <String name="AlbumCoverId" tag="94"/>
+    </ClassInfo>
+
+    <ClassInfo name="com.huawei.dpf.portal.app.remote.message.entity.picture.DP3PictureInfo" id="90002">
+        <String name="PictureId" tag="A2"/>
+        <EncodedString name="PictureName" tag="A3"/>
+        <EncodedString name="PictureDesc" tag="A4"/>
+    </ClassInfo>
+
+</encoders>

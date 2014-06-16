@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.0" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="title" type="java.lang.String" value="R.S.A."/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="(No Menu)"/>
+    <SyntheticProperty name="formSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,0,-56,0,0,1,44"/>
+    <SyntheticProperty name="formPosition" type="java.awt.Point" value="-84,-19,0,5,115,114,0,14,106,97,118,97,46,97,119,116,46,80,111,105,110,116,-74,-60,-118,114,52,126,-56,38,2,0,2,73,0,1,120,73,0,1,121,120,112,0,0,0,0,0,0,0,0"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generatePosition" type="boolean" value="true"/>
+    <SyntheticProperty name="generateSize" type="boolean" value="true"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+
+  <Events>
+    <EventHandler event="windowClosing" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="exitForm"/>
+  </Events>
+
+  <AuxValues>
+  </AuxValues>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
+    <Property name="axis" type="int" value="1"/>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="pannelloParametri">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
+        <Property name="axis" type="int" value="1"/>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="pannelloPQ">
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="etichettaImmissionePQ">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Immetti la dimensione in bit dei numeri primi P e Q da generare "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="campoImmissionePQ">
+              <Properties>
+                <Property name="columns" type="int" value="5"/>
+                <Property name="text" type="java.lang.String" value="32"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="tastoGeneraKeyRSA">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="genera chiave RSA"/>
+              </Properties>
+
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tastoGeneraKeyRSAActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="pannelloN">
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="etichettaN">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="N=P*Q "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="campoN">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+                <Property name="columns" type="int" value="60"/>
+                <Property name="horizontalAlignment" type="int" value="4"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="pannelloPhiN">
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="etichettaPhiN">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Phi(N) "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="campoPhiN">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+                <Property name="columns" type="int" value="60"/>
+                <Property name="horizontalAlignment" type="int" value="4"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="pannelloChiaveCifratura">
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="etichettaChiaveCifratura">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Chiave di cifratura "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="campoChiaveCifratura">
+              <Properties>
+                <Property name="columns" type="int" value="54"/>
+                <Property name="horizontalAlignment" type="int" value="4"/>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="pannelloChiaveDecifratura">
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="etichettaChiaveDecifratura">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Chiave di decifratura "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="campoChiaveDecifratura">
+              <Properties>
+                <Property name="columns" type="int" value="52"/>
+                <Property name="horizontalAlignment" type="int" value="4"/>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="pannelloProdottoChiavi">
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="etichettaProdotto">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Prodotto chiavi modulo Phi(N) "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="campoProdottoChiavi">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+                <Property name="columns" type="int" value="48"/>
+                <Property name="horizontalAlignment" type="int" value="4"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="pannelloTestoIniziale">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
+        <Property name="axis" type="int" value="1"/>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="pannelloWelcomeTestoIniziale">
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JSeparator" name="sepatoreSinistro">
+            </Component>
+            <Component class="javax.swing.JLabel" name="etichettaWelcomeTestoIniziale">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Immetti il testo da decifrare "/>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JSeparator" name="separatoreCentrale">
+            </Component>
+            <Component class="javax.swing.JButton" name="tastoCodifica">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Codifica con la chiave di cifratura"/>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tastoCodificaActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JSeparator" name="separatoreDestro">
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JScrollPane" name="pannelloScorrimentoTestoIniziale">
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="areaTestoIniziale">
+              <Properties>
+                <Property name="lineWrap" type="boolean" value="true"/>
+                <Property name="columns" type="int" value="50"/>
+                <Property name="rows" type="int" value="4"/>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="pannelloTestoCodificato">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
+        <Property name="axis" type="int" value="1"/>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="pannelloWelcomeTestoCodificato">
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JSeparator" name="jSeparator3">
+            </Component>
+            <Component class="javax.swing.JLabel" name="etichettaWelcomeTestoCodificato">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Testo codificato: se vuoi modificalo"/>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JSeparator" name="jSeparator4">
+            </Component>
+            <Component class="javax.swing.JButton" name="tastoDecodifica">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Decodifica con la chiave di decifratura"/>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tastoDecodificaActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JSeparator" name="jSeparator5">
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JScrollPane" name="pannelloScorrimentoTestoCodificato">
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="areaTestoCodificato">
+              <Properties>
+                <Property name="lineWrap" type="boolean" value="true"/>
+                <Property name="columns" type="int" value="50"/>
+                <Property name="rows" type="int" value="10"/>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="pannelloTestoDecodificato">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
+        <Property name="axis" type="int" value="1"/>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="pannelloWelcomeTestoDecodificato">
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JSeparator" name="jSeparator6">
+            </Component>
+            <Component class="javax.swing.JLabel" name="etichettaWelcomeTestoDecodificato">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Testo decodificato: confrontalo con quello iniziale"/>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JSeparator" name="jSeparator7">
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JScrollPane" name="pannelloScorrimentoTestoDecodificato">
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="areaTestoDecodificato">
+              <Properties>
+                <Property name="lineWrap" type="boolean" value="true"/>
+                <Property name="columns" type="int" value="50"/>
+                <Property name="rows" type="int" value="4"/>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

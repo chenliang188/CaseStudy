@@ -1,0 +1,25 @@
+[PropertyInfo]
+bAjouter,JButton,false,false, , ,false,<défaut>
+bAnnuler,JButton,false,false, , ,false,<défaut>
+borderLayout1,BorderLayout,false,false, , ,false,<défaut>
+borderLayout2,BorderLayout,false,false, , ,false,<défaut>
+cleeModulo,byte[],false,false, , ,true,<défaut>
+cleePublic,byte[],false,false, , ,true,<défaut>
+gridBagLayout1,GridBagLayout,false,false, , ,false,<défaut>
+jPanel1,JPanel,false,false, , ,false,<défaut>
+jPanel2,JPanel,false,false, , ,false,<défaut>
+jPanel3,JPanel,false,false, , ,false,<défaut>
+lCleePublic,JLabel,false,false, , ,false,<défaut>
+lModulos,JLabel,false,false, , ,false,<défaut>
+lNom,JLabel,false,false, , ,false,<défaut>
+nom,String,false,false,nom,nom,true,<default>
+pCentre,JPanel,false,false, , ,false,<défaut>
+tCleePublic,JTextArea,false,false, , ,false,<défaut>
+tModulos,JTextArea,false,false, , ,false,<défaut>
+tNom,JTextField,false,false, , ,false,<défaut>
+valeurRetour,int,false,false, , ,false,<défaut>
+[IconNames]
+
+
+
+
